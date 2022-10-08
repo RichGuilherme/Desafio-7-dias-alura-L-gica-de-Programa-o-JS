@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio6</title>
+</head>
+<body>
+    <script>
+        
+    let pergunta = prompt("Escreva todos os alimento que deseja colocar na lista:")
+    let lista = pergunta.split(", ")
+    console.log(lista)
+
+    let resposta = "0"
+    while(resposta !== "3"){
+        resposta = prompt("Se caso deseja colocar mais um alimentos na lista digite 1, caso queira remove algum alimento digite 2 e se quer terminar a lista digite 3")
+        
+        if(resposta === "1"){
+            let pergunta2 = prompt("Qual alimento você quer adicionar a mais?")
+            lista.push(pergunta2)
+            console.log(lista)
+        }
+        else if(resposta === "2"){
+            let pergunta3 = prompt("Qual alimento deseja remover?")
+            lista = lista.filter(lista => lista != pergunta3)
+
+            console.log(lista)
+        }else if(resposta === "3"){
+            alert(`Lista: ${lista}`)
+        }
+    }
+    </script>
+    
+</body>
+</html>

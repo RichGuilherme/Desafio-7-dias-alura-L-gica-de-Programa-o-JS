@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio</title>
+    <script defer src="desafio3.js"></script>
+    <style>
+       #enviar{
+          justify-content: center;
+          left: 140px;
+          height: 30px;           
+          width: 40px;
+          position: absolute;
+          
+       }
+    </style>
+</head>
+<body >
+
+        <legend style="font-size: 3em;">carreira</legend>
+
+        <form>
+           <p>Qual caminho você quer seguir na área de desenvolvimento?</p>
+           <select style="height: 21px; width: 110px; text-align: center;" id="escolhaTecnologia">
+
+             <label><option >Back-end</option></label>
+             <label><option >Front-end</option></label>
+    
+            </select>
+          <input type="button" id="enviarEscolha" value="enviar">
+       </form>
+
+        <p>Você deseja se especializar na área escolhida ou quer se desenvolver para fullStack?</p>
+        <input type="button" id="enviarPergunta1" value="responder">
+     
+        <form>
+          <p>Quais tecnologias você gostaria de se especializar ou conhecer ? </p>
+          <input type="text" id="tecnologiasEscolhidas" >
+          <input type="button" id="enviarTecnologia" value="enviar">
+        </form>
+
+
+</body>
+</html>
