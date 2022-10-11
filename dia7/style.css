@@ -1,0 +1,127 @@
+body{
+    background: linear-gradient(170deg, #8BBCCC, #4C6793, #5C2E7E, #000000);
+    background-size: 300% 300%;
+    height: 100%;
+    width: 100%;
+    animation: colors 15s ease infinite;
+}
+@keyframes colors {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+.page{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+:root {
+  height: 100%;
+}
+.layoutDaCalculadora{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+    padding: 20px;
+    padding-bottom: 10px;
+    border: solid 2px;
+    border-radius: 15px;
+    width: 295px;
+    height: 481px;
+    background-color: rgba(238, 238, 238, 0.082);
+}
+/*visor onde aparece os calculos*/
+
+.display p{
+    margin: 3px;
+    text-align: right;
+    font-size: 17px;
+}
+.display input{
+    background: transparent;
+    border: none;
+    height: 26px;
+    width: 290px;
+    text-align: right;
+    font-size: 23px;
+    color: black;
+}
+
+.layoutDosBotoes{
+    height: 330px;
+    width: 291px;
+    border: 1px solid;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+
+}
+button{
+    margin-top: 8px;
+    height: 57px;
+    width: 55px;  
+    font-size: 21px;
+    color: white;
+    background-color: rgb(128, 128, 128);
+    border: none;
+    border-radius: 7px;
+    
+    transition: all 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    -webkit-filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.7));
+}
+
+.horizontal{
+    position: relative;
+    top: -129px;
+    left: 178px;
+    width: 291px;
+    height: 100px
+}
+.igual{
+    width: 114px;
+}
+
+.um {
+    text-align: right;
+}
+.mais,
+.menos{
+    height: 123px;
+}
+
+.deletar,
+.igual,
+.mais,
+.menos,
+.parenteses,
+.clean,
+.vezes,
+.dividi,
+.ponto{
+    background-color: rgb(204, 204, 204);
+    color:  black;
+
+}
