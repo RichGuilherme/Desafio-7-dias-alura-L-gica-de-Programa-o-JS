@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(170deg, #8BBCCC, #4C6793, #5C2E7E, #000000);
+    background: linear-gradient(170deg, #acdae9, #295191, #5C2E7E, #000000);
     background-size: 300% 300%;
     height: 100%;
     width: 100%;
@@ -35,35 +35,43 @@ html,
   height: 100%;
 }
 .layoutDaCalculadora{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 150px;
     padding: 20px;
-    padding-bottom: 10px;
-    border: solid 2px;
-    border-radius: 15px;
+    padding-bottom: 15px;
+    border: solid  white 2px;
+    border-radius: 20px;
     width: 295px;
     height: 481px;
-    background-color: rgba(238, 238, 238, 0.082);
+    background-color: rgba(238, 238, 238, 0);
+    
+    box-shadow:
+    20px 20px 21px rgba(0, 0, 0, 0.4)
+  ;
+  
+    
 }
 /*visor onde aparece os calculos*/
 
 .display p{
     margin: 3px;
     text-align: right;
-    font-size: 17px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 .display input{
     background: transparent;
     border: none;
-    height: 26px;
-    width: 290px;
+    border-radius: 7px;
+    vertical-align: 10px;
+    height: 40px;
+    width: 292px;
     text-align: right;
-    font-size: 23px;
-    color: black;
+    font-size: 35px;
+    color: rgb(79, 19, 136);
+    background-color: rgba(238, 238, 238);
 }
 
 .layoutDosBotoes{
@@ -80,8 +88,8 @@ button{
     height: 57px;
     width: 55px;  
     font-size: 21px;
-    color: white;
-    background-color: rgb(128, 128, 128);
+    color: rgb(253, 253, 253);
+    background: linear-gradient(135deg, rgb(198, 159, 219) 10%, rgb(146, 118, 202) 100%);
     border: none;
     border-radius: 7px;
     
@@ -121,7 +129,7 @@ button:hover{
 .vezes,
 .dividi,
 .ponto{
-    background-color: rgb(204, 204, 204);
-    color:  black;
+    background: linear-gradient(135deg, rgb(165, 97, 206) 10%, rgb(74, 49, 179) 100%);
+    color:  white;
 
 }

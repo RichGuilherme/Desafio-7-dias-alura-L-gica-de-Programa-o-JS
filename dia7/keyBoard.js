@@ -1,7 +1,6 @@
 function tecla() {
     press = event.keyCode;
   
-    console.log(press)
   
     switch (press) {
       case 13:
